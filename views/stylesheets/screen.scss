@@ -269,11 +269,11 @@ h2 {
   @include column($blueprint-grid-columns, true);
   @include clearfix;
   .graph {
-    @include column(($blueprint-grid-columns / 2));
-    width: $blueprint-grid-outer-width * ($blueprint-grid-columns / 2) - $blueprint-grid-margin - 2;
+    @include column(($blueprint-grid-columns / 3));
+    width: $blueprint-grid-outer-width * ($blueprint-grid-columns / 3) - $blueprint-grid-margin - 2;
     &.last {
-      @include column(($blueprint-grid-columns / 2), true);
-      width: $blueprint-grid-outer-width * ($blueprint-grid-columns / 2) - $blueprint-grid-margin - 2;
+      @include column(($blueprint-grid-columns / 3), true);
+      width: $blueprint-grid-outer-width * ($blueprint-grid-columns / 3) - $blueprint-grid-margin - 2;
     }
     border: 1px solid #777;
     line-height: 0;
@@ -286,7 +286,7 @@ h2 {
     }
     img {
       width: 100%;
-      height: $blueprint-grid-width * ($blueprint-grid-columns / 2) * 0.75;
+      height: $blueprint-grid-width * ($blueprint-grid-columns / 3) * 0.75;
     }
   }
 }

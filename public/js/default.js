@@ -12935,7 +12935,7 @@ var app = Sammy('body', function() {
                 // actually replace the graph image
                 graph_obj.image($(this).find('img'));
                 // add a last class alternatingly to fix the display grid
-                if ((i+1)%2 == 0) {
+                if ((i+1)%3 == 0) {
                   $(this).addClass('last');
                 }
                 // if its all graphs, delete operates on everything
