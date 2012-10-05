@@ -3075,6 +3075,9 @@ jQuery.event = {
       event.which = (event.button & 1 ? 1 : ( event.button & 2 ? 3 : ( event.button & 4 ? 2 : 0 ) ));
     }
 
+    // HACK: Middle clicks are somehow conflated with left clicks, which prevents "open in new tab", so hide middle clicks completely
+    if( event.type == 'click' && event.metaKey ) {                                                                                               return undefined;                                                                                                                        }
+
     return event;
   },
 
