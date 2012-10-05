@@ -209,8 +209,6 @@
           %a.view
             %button Show
     .graph{style: 'display:none'}
-      %a.edit
-        %img.ggraph{src: '/images/loading.gif'}
       .desc
         %h3.title &nbsp;
         %ul.actions
@@ -222,6 +220,8 @@
           %li
             %a.edit
               %button Edit
+      %a.edit
+        %img.ggraph{src: '/images/loading.gif'}
       .snapshot{style: 'display:none'}
         %a.view{target: 'blank'}
           %img{src: '/images/loading.gif'}
